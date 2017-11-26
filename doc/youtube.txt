@@ -1,0 +1,16 @@
+Spring boot, Jhipster
+https://www.youtube.com/watch?v=72K7cMCv7eM
+https://www.youtube.com/watch?v=bUq83Rz4BHA
+
+Docker:
+https://www.youtube.com/watch?v=FlSup_eelYE
+https://www.youtube.com/watch?v=3n_pqQcih5c
+https://www.youtube.com/watch?v=6vjo3pMXW7I
+https://www.youtube.com/watch?v=kk2zwoRGNPU
+https://www.youtube.com/watch?v=UB3-qj2QA50
+
+Docker compose:
+https://www.youtube.com/watch?v=Qw9zlE3t8Ko
+
+Docker image with maven:
+http://containertutorials.com/docker-compose/spring-boot-app.html
