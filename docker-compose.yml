@@ -1,0 +1,27 @@
+version: '3'
+
+services: 
+  docker-demo-server:
+    build: ./docker-demo-server
+    volumes: 
+      - ./docker-demo-server:/usr/src/app
+    ports:
+      - 6001:8080
+
+  website:
+    image: php:apache
+    volumes:
+      - ./website:/var/www/html
+    ports:
+      - 5002:80
+    depends_on:
+      - docker-demo-server
+
+  docker-demo-client:
+    build: ./docker-demo-client
+    volumes:
+      - ./docker-demo-client:/usr/local/nginx/html
+    ports:
+      - 5001:80
+    depends_on:
+      - docker-demo-server
