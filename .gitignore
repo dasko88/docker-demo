@@ -1,0 +1,4 @@
+#server
+docker-demo-server/target/*
+docker-demo-server/*.iml
+docker-demo-server/.idea/*
