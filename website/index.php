@@ -6,23 +6,18 @@
 </head>
 <script>
 	$(function() {
-    console.log( "ready!" );
-
-    $.get("http://docker-demo-server/beds", function(data, status){
-        alert("Data: " + data + "\nStatus: " + status);
+        $.get("http://172.18.0.2:8080/hello", function(data, status){
     });
 });
 </script>
     </head>
 
     <body>
-        <h1>Welcome to PHP</h1>
-        <ul>
+        <p>Bed 
             <?php
-
-            echo "Ciao";
-
+            $json = file_get_contents('http://172.18.0.2:8080/beds');
+            echo $json;
             ?>
-        </ul>
+        </p>
     </body>
 </html>
